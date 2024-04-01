@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/irevoire/tree-sitter-numbat",
+  "rev": "483aeccc940367073281055499907026a70d9880",
+  "date": "2023-12-03T00:53:47+01:00",
+  "path": "/nix/store/n1shfplxkbgyqzwm7amz5r2c3q17mbp9-tree-sitter-numbat",
+  "sha256": "0qla2q2bfaq6yysjh6zz3n0nizm4wbnz97zpvfscvd1cs3b8hcji",
+  "hash": "sha256-UTKI1tAstM202/ef9O3ipP5ogR3/Gyi19wYrtwQWimI=",
+  "fetchLFS": false,
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
+}

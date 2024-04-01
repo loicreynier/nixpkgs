@@ -402,6 +402,10 @@ let
       orga = "nushell";
       repo = "tree-sitter-nu";
     };
+    "tree-sitter-numbat" = {
+      orga = "irevoire";
+      repo = "tree-sitter-numbat";
+    };
     "tree-sitter-cue" = {
       orga = "eonpatapon";
       repo = "tree-sitter-cue";
