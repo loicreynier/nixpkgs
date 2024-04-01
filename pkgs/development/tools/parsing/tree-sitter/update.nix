@@ -77,6 +77,15 @@ let
     "tree-sitter-fluent"
     # to unblock my update
     "csharp-tree-sitter"
+    # GitHub org page and actions
+    ".github"
+    "workflows"
+    "fuzz-action"
+    "parse-action"
+    "parser-setup-action"
+    "parser-test-action"
+    "parser-update-action"
+    "setup-action"
   ];
   ignoredTreeSitterOrgReposJson = jsonFile "ignored-tree-sitter-org-repos" ignoredTreeSitterOrgRepos;
 
