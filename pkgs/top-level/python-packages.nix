@@ -11308,6 +11308,8 @@ self: super: with self; {
 
   pyepsg = callPackage ../development/python-modules/pyepsg { };
 
+  pyepsilla = callPackage ../development/python-modules/pyepsilla { };
+
   pyerfa = callPackage ../development/python-modules/pyerfa { };
 
   pyevmasm = callPackage ../development/python-modules/pyevmasm { };
