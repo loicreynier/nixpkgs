@@ -1,29 +1,29 @@
 {
   lib,
   buildPythonPackage,
-  fetchPypi,
+  fetchFromGitHub,
   numpy,
   pythonOlder,
-  setuptools,
-  setuptools-scm,
   scipy,
+  uv-build,
 }:
 
 buildPythonPackage rec {
   pname = "dmsuite";
-  version = "0.3.0";
+  version = "0.3.0-unstable-2025-07-11";
   pyproject = true;
 
-  disabled = pythonOlder "3.8";
+  disabled = pythonOlder "3.9";
 
-  src = fetchPypi {
-    inherit pname version;
-    hash = "sha256-IqLsHkGNgPz2yZm0QMyMMo6Mr2RsU2DPGxYpoNwC3fs=";
+  src = fetchFromGitHub {
+    owner = "labrosse";
+    repo = pname;
+    rev = "fb263d1902b0709fcf069fd2af0d4e5876f5e6ce";
+    hash = "sha256-wMFSc6t9JHxopXhXwX7OYx+JUz8c2OZepaYnQYthi2s=";
   };
 
-  build-system = [
-    setuptools
-    setuptools-scm
+  nativeBuildInputs = [
+    uv-build
   ];
 
   dependencies = [
